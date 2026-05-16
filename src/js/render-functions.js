@@ -3,9 +3,9 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 import 'loaders.css/loaders.min.css';
 
 const galleryContainer = document.querySelector('#gallery');
-const loaderElement = document.querySelector('.loader');
+const loaderElement = document.querySelector('.gallery-actions .loader');
 const loadMoreButton = document.querySelector('.load-more-button');
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('#gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });

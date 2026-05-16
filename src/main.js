@@ -45,6 +45,7 @@ async function onSearchSubmit(event) {
 
 async function onLoadMoreClick() {
   currentPage += 1;
+  hideLoadMoreButton();
   await fetchImages();
   scrollGallery();
 }
